@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="heading">To do list</h1>
+      <h2 class="subheading">to keep track on moving day!</h2>
+      <form id="addForm">
+        <section id="info">
+          <label for="todo">Need to do</label>
+          <input type="text" name="todo" placeholder="e.g sort clothes" />
+          <label for="maybe">Nice to do</label>
+          <input type="textarea" name="maybe" placeholder="e.g Buy candy" />
+          <label for="date">Duedate</label>
+          <input type="date" name="date" placeholder="01/10/2019" />
+          <label for="time">Time</label>
+          <input type="time" name="time" placeholder="18:00" />
+          <input type="submit" value="Add task to the list" />
+        </section>
+      </form>
+
+      <div id="app"></div>
+      <template>
+        <article class="list">
+          <label for="check">Done!</label>
+          <input type="checkbox" id="check" name="check" />
+          <h1></h1>
+          <h2></h2>
+          <p class="showDate"></p>
+          <p class="showTime"></p>
+          <button class="edit">Edit field</button>
+          <button class="delete">Delete</button>
+        </article>
+      </template>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

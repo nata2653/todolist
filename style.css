@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  display: grid;
+  justify-content: center;
+}
+
+#info {
+  display: inline-grid;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+.subheading {
+  font-style: italic;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+#addForm {
+  justify-self: center;
+}
+
+.list {
+  padding: 30px;
+}
+
+button {
+  float: right;
+}
